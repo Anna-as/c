@@ -1,45 +1,36 @@
-.row{
-    margin-right: 0px;
-    margin-left: 0px;
-}
-.container {
-    max-width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-    
-}
-.logo{
-    color: white;
-    padding-bottom: 4rem;
-}
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-     /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: darkblue; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+.navbar {
+    z-index: 1040;
+  }
+  .side-nav {
+    margin-top: 57px !important;
   }
   
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: larger;
-    color: #818181;
-    display: block;
+  @media (min-width: 1200px){
+  .fixed-sn main {
+      margin-left: 20% !important;
+      margin-right: 20% !important;
+    }
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
+
+  .sidebar{
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      font-size: larger;
+      font-weight: bolder;
   }
   .logout{
-      padding-top: 2.5rem;
+      padding-top: 5rem;
   }
-  .btn{
-      width: fit-content;
+  .sidebar-items{
+      padding-top: 3rem;
+      line-height: 36px;
+  }
+  .w3-teal, .w3-hover-teal:hover {
+    color: black!important;
+    background-color: whitesmoke!important;
+  }
+  .w3-teal, .w3-hover-teal:hover {
+    color: #fff!important;
+    background-color: #E5E5E5;
   }

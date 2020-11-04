@@ -3,107 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova</title>
+    <title>Nora</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
 </head>
 <body>
-    <div class="container" style="position: absolute;">
+    <div class="container">
         <div class="row">
-            <div class="left col-md-2 col-4" style="width: 40%;">
-                <div class="sidebar col-md-2 col-4">
-                <!-- Side navigation -->
-                <div class="sidenav col-md-2 col-4">
-                    
-                    <div>
-                    <h2 class="logo">Logo</h2>
-                    </div>
-                    
-                    <div class="list">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item" >
-                          <a class="nav-link" style="font-size: larger;font-weight: bolder;"href="#"><i class="fas fa-home" id="nav-icon"></i>Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" style="font-size: larger;font-weight: bolder;" href="#"><i class="fas fa-book-open" id="nav-icon"></i>All Flyer</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" style="font-size: larger;font-weight: bolder;" href="#"><i class="fas fa-cloud" id="nav-icon"></i>Publish Flyer</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" style="font-size: larger;font-weight: bolder;" href="#"><i class="fas fa-cog" id="nav-icon"></i>Account Settings</a>
-                        </li>
-                    </ul>
-                    </div>
-                    
-                    <div class="logout">
-                        <a href="#" class="btn" style="font-size: larger;color: white;"><span class="fas fa-sign-out-alt"></span> Log out</a>
-                    </div>
-
-
-                </div>
-            </div>
-
-            </div>
-
-            <div class="right col-md-10 col-8" style="width: 60%;">
-                <div class="row col-md-10 col-8" style="padding-bottom: 2%;">
-                    <div class="title" style="width: 70%;">
-                    <h1 id="title">Publish Flyer</h1>
-                    </div>
-
-                    <div class="details" style="width: 30%;">
-                        <p>User name</p>
-                        <!--User Name-->
-
-                    </div>
+            <div class="left col-md-2 col-4" style="background-color: darkcyan;display: none;" id="mySidebar">
                 
-                </div>
-
-                <div class="head col-md-10 col-8" style="background-color: #FFFFFF;;">
-                    <form>
-                        <div class="row" style="padding-bottom: 0.5%;padding-top: 3%;">
-                            <label for="name" class="label" style="width: 30%;padding-left: 5%; ">Title</label>
-                            <input type="text" class="form-control" style="width: 60%;height: 61px;" id="name" aria-describedby="emailHelp">
-                        </div>
-                        <div class="row" style="padding-bottom: 0.5%;padding-top: 0.5%;">
-                            <label for="name" class="label" style="width: 30%;padding-left: 5%; ">Description</label>
-                            <input type="text" class="form-control" style="width: 60%;height: 97px;" id="name" aria-describedby="emailHelp">
-                        </div>
-                        <div class="row" style="padding-bottom: 0.5%;padding-top: 0.5%;">
-                            <label for="name" class="label" style="width: 30%;padding-left: 5%; ">Category</label>
-                            <input type="text" class="form-control" style="width: 60%;height: 61px;" id="name" aria-describedby="emailHelp">
-                        </div>
-                        <div class="row" style="padding-bottom: 0.5%;padding-top: 0.5%;">
-                            <label for="name" class="label" style="width: 30%;padding-left: 5%; ">Expire Date</label>
-                            <input type="date" class="form-control" style="width: 40%;height: 61px;" id="name" aria-describedby="emailHelp">
-                        </div>
-                        <div class="row" style="padding-bottom: 0.5%;padding-top: 0.5%;">
-                            <label for="name" class="label" style="width: 30%;padding-left: 5%; ">Select File</label>
-                            <input type="text" class="form-control" style="width: 60%;height: 106px; left: 720px; top: 544px;
-                            background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.2);box-sizing: border-box;border-radius: 12px;" id="name" aria-describedby="emailHelp">
-                        </div>
-                        <div class="row" style="padding-bottom: 0.5%;padding-top: 0.5%;">
-                            <label for="formControlRange" class="label" style="width: 30%;padding-left: 5%; ">Effective Radius</label>
-                            <input type="range" class="form-control" style="width: 40%;height: 12px;background-color: #5B6CFF;
-                            border-radius: 10px;" id="name" aria-describedby="emailHelp">
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                        <button type="submit" class="continue">Submit</button>
-                        </div>
-                      </form>
-    
+                <div class="sidebar ">
                     
-                </div>
+                    <!-- Side navigation -->
+                    <div class="sidenav col-md-2 col-4">
+                        <button class="w3-bar-item w3-button w3-large" style="color: white;"
+                        onclick="w3_close()">&times;</button>
+                        <div>
+                        <h2 class="logo">Logo</h2>
+                        </div>
+                        
+                        <div class="list">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item" >
+                              <a class="nav-link" style="font-size: larger;font-weight: bolder;"href="#"><i class="fas fa-home" id="nav-icon"></i>Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" style="font-size: larger;font-weight: bolder;" href="#"><i class="fas fa-book-open" id="nav-icon"></i>All Flyer</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" style="font-size: larger;font-weight: bolder;" href="#"><i class="fas fa-cloud" id="nav-icon"></i>Publish Flyer</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" style="font-size: larger;font-weight: bolder;" href="#"><i class="fas fa-cog" id="nav-icon"></i>Account Settings</a>
+                            </li>
+                        </ul>
+                        </div>
+                        
+                        <div class="logout">
+                            <a href="#" class="btn" style="font-size: larger;color: white;"><span class="fas fa-sign-out-alt"></span> Log out</a>
+                        </div>
+    
+    
+                    </div>
+                    </div>
+    
             </div>
+
+            
+
+            <div class="right col-md-12 col-12" style="background-color: #E5E5E5;">
+                <div class="head" style="padding-top: 2rem;" >
+                    <div class="row" id="header">
+                        <div class="ham col-md-1 col-1">
+                        <button id="openNav" class="w3-button  w3-xlarge" style="color: black;" onclick="w3_open()"><i class="fa fa-bars" style="color: black;"></i></button>
+                        </div>
+
+                        <div class="ham col-md-5 col-5">
+                            <i class="pagehead">Publish Flyer</i>
+                        </div>
+                        
+                        <div class="page col-md-6 col-6 d-flex justify-content-end">
+                            <div class="col-md-2 col-2" style="padding-right: 2.5rem;"><i class="far fa-bell fa-2x"></i></div>
+                            <div class="col-md-2 col-2" style="padding-right: 2.5rem;"><i>User Name</i></div>
+                            <div class="col-md-2 col-2" style="padding-right: 2.5rem;"><i class="fas fa-user-circle fa-2x"></i></div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="main col-md-12 col-12" style="background-color: #FFFFFF;padding: 2%;">
+                    <div class="row" >
+                    <div class="mainlft col-md-5 col-4 d-flex justify-content-center">
+                        <label for="name" class="label">Title</label>
+                    </div>
+                    <div class="mainrt col-md-5 col-4 d-flex justify-content-center">
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    </div>
+                    
+                    <div class="row ">
+                        <div class="mainlft col-md-5 col-4 d-flex justify-content-center" >
+                            <label for="name" class="label">Description</label>
+                        </div>
+                        <div class="mainrt col-md-5 col-4 d-flex justify-content-center" >
+                            <input type="text" class="form-control" style="height: 97px;" id="name" aria-describedby="emailHelp">
+                        </div>
+                    </div>  
+                    
+                    <div class="row ">
+                        <div class="mainlft col-md-5 col-4 d-flex justify-content-center" >
+                            <label for="name" class="label">Category</label>
+                        </div>
+                        <div class="mainrt col-md-5 col-4 d-flex justify-content-center" >
+                            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="mainlft col-md-5 col-4 d-flex justify-content-center" >
+                            <label for="name" class="label">Expire date</label>
+                        </div>
+                        <div class="mainrt col-md-5 col-4 d-flex " >
+                            <input type="date" class="form-control" style="height: 61px;width: 15rem;" id="name" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="mainlft col-md-5 col-4 d-flex justify-content-center" >
+                            <label for="name" class="label">Effective radius</label>
+                        </div>
+                        <div class="mainrt col-md-5 col-4 d-flex justify-content-center">
+                            <input type="range" class="form-control" id="name" aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="submit col-md-12 col-12 d-flex justify-content-center">
+                            <button type="submit" class="continue">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    
         </div>
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    <script>
+        function w3_open() {
+          
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+          
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
